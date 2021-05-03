@@ -32,13 +32,3 @@ extension PonyAPI {
 		var endpoint: Endpoint { .init("by-occupation/\(residence)", .get) }
 	}
 }
-
-extension PonyAPI {
-
-	struct PonyResponse: Decodable {
-		let data: [Pony]
-		let status: Int
-		let warning: String?
-		let error: String?
-	}
-}

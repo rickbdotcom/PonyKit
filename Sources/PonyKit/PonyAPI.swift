@@ -3,7 +3,7 @@
 import EndpointKit
 import Foundation
 
-protocol PonyQueryEndpoint: APIEndpoint where Parameters == CharacterQueryParameters, Response == PonyAPI.PonyResponse {
+protocol PonyQueryEndpoint: APIEndpoint where Parameters == CharacterQueryParameters, Response == Ponies {
 }
 
 public enum PonyAPI {

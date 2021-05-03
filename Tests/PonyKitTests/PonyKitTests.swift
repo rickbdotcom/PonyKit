@@ -18,18 +18,27 @@ final class PonyKitTests: XCTestCase {
 	}
 
 	func testCharacterEndpoints() {
-		test(PonyService.default.allCharacters(query: nil), "all characters")
+		test(PonyService.default.allCharacters(), "all characters")
+		test(PonyService.default.allCharacters(query: .init(limit: 1, offset: 1)), "all characters, limit: 1, offset: 1") { ponies in
+			XCTAssert(ponies.data.count == 1)
+		}
+		test(PonyService.default.characters(byId: 1), "characters by Id: 1") { ponies in
+			XCTAssert(ponies.data.count == 1)
+			XCTAssert(ponies.data[0].id == 1)
+		}
 		wait()
 	}
 
-	func test<P: Publisher>(_ endpoint: P, _ description: String) {
+	func test<P: Publisher>(_ publisher: P, _ description: String, receiveValue: ((P.Output) -> Void)? = nil) {
 		let expectation = XCTestExpectation(description: description)
 		expectations.append(expectation)
 
-		endpoint
+		publisher
 			.expectation(expectation)
-			.print()
-			.sink(receiveCompletion: { _ in }, receiveValue: { _ in })
+			.sink(receiveCompletion: { _ in
+			}, receiveValue: {
+				receiveValue?($0)
+			})
 			.store(in: &subscriptions)
 	}
 

@@ -42,6 +42,13 @@ public struct Pony: Decodable {
 	}
 }
 
+public struct Ponies: Decodable {
+	let data: [Pony]
+	let status: Int
+	let warning: String?
+	let error: String?
+}
+
 public struct CharacterQueryParameters: Encodable {
 	public let limit: Int?
 	public let offset: Int?
@@ -128,5 +135,26 @@ public extension Pony.Image {
 			let full = try container.decode(Full.self)
 			self = .full(full)
 		}
+	}
+
+	var url: URL? {
+		switch self {
+		case let .url(url):
+			return url
+		case let .full(full):
+			return full.url
+		default:
+			return nil
+		}
+	}
+}
+
+public struct PonyApiError: Decodable, LocalizedError {
+	let status: Int
+	let error: String
+	let warning: String?
+
+	public var errorDescription: String? {
+		return "\(error)\n\(warning ?? "")"
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "EndpointKit",
+        "repositoryURL": "https://github.com/rickbdotcom/EndpointKit",
+        "state": {
+          "branch": null,
+          "revision": "b9d645e4da6b6e434fc8af810bfd8b7d583ff12d",
+          "version": "0.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,6 +1,8 @@
 import EndpointKit
 import Foundation
 
+protocol CharacterQueryEndpoint: APIEndpoint where Parameters == CharacterQueryParameters, Response == Ponies {
+}
 
 struct GetAllCharacters: CharacterQueryEndpoint {
 	let parameters: CharacterQueryParameters

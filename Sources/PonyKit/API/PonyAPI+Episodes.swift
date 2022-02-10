@@ -1,6 +1,9 @@
 import EndpointKit
 import Foundation
 
+protocol EpisodeQueryEndpoint: APIEndpoint where Parameters == EpisodeQueryParameters, Response == Episodes {
+}
+
 struct GetAllEpisodes: EpisodeQueryEndpoint {
 	let parameters: EpisodeQueryParameters
 	let endpoint: Endpoint = "GET episode/all"

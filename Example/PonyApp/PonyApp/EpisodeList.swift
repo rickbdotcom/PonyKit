@@ -8,12 +8,12 @@
 import PonyKit
 import SwiftUI
 
-struct PonyList: View {
-	@Binding var ponies: [Pony]
+struct EpisodeList: View {
+	@Binding var episodes: [Episode.Full]
 
 	var body: some View {
-		List(ponies) { pony in
-			PonyListCard(pony: pony)
+		List(episodes) { episode in
+			EpisodeListCard(episode: episode)
 		}
 	}
 }

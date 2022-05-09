@@ -13,7 +13,11 @@ struct PonyList: View {
 
 	var body: some View {
 		List(ponies) { pony in
-			PonyListCard(pony: pony)
+			NavigationLink(destination: {
+				PonyDetail(pony: pony)
+			}, label: {
+				PonyListCard(pony: pony)
+			})
 		}
 	}
 }

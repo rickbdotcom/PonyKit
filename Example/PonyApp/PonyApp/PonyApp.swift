@@ -14,28 +14,31 @@ struct PonyApp: App {
 
 	var body: some Scene {
 		WindowGroup {
-			VStack {
-				Picker("Data", selection: $state.selectedData.id) {
-					ForEach(PonyAppState.PonyDataSelection.allCases) {
-						Text($0.title)
+			NavigationView {
+				VStack {
+					Picker("Data", selection: $state.selectedData.id) {
+						ForEach(PonyAppState.PonyDataSelection.allCases) {
+							Text($0.title)
+						}
+					}
+					.pickerStyle(SegmentedPickerStyle())
+
+					switch state.selectedData {
+					case .character:
+						PonyList(ponies: $state.ponies)
+							.refreshable {
+								await state.updatePonies()
+							}
+					case .episode:
+						EpisodeList(episodes: $state.episodes)
+							.refreshable {
+								await state.updateEpisodes()
+							}
+					default:
+						EmptyView()
 					}
 				}
-				.pickerStyle(SegmentedPickerStyle())
-
-				switch state.selectedData {
-				case .character:
-					PonyList(ponies: $state.ponies)
-						.refreshable {
-							await state.updatePonies()
-						}
-				case .episode:
-					EpisodeList(episodes: $state.episodes)
-						.refreshable {
-							await state.updateEpisodes()
-						}
-				default:
-					EmptyView()
-				}
+				.navigationTitle("Ponies")
 			}
 			.onAppear {
 				Task {

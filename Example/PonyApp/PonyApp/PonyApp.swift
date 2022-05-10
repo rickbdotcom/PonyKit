@@ -10,7 +10,10 @@ import SwiftUI
 
 @main
 struct PonyApp: App {
-	@StateObject var state = PonyAppState()
+	@StateObject private var state = PonyAppState()
+
+	@State var error: Error?
+	@State var activity: Bool = false
 
 	var body: some Scene {
 		WindowGroup {
@@ -26,13 +29,13 @@ struct PonyApp: App {
 					switch state.selectedData {
 					case .character:
 						PonyList(ponies: $state.ponies)
-							.refreshable {
-								await state.updatePonies()
+							.displayRefreshable(error: $error) {
+								try await state.updatePonies()
 							}
 					case .episode:
 						EpisodeList(episodes: $state.episodes)
-							.refreshable {
-								await state.updateEpisodes()
+							.displayRefreshable(error: $error) {
+								try await state.updateEpisodes()
 							}
 					default:
 						EmptyView()
@@ -40,15 +43,14 @@ struct PonyApp: App {
 				}
 				.navigationTitle("Ponies")
 			}
-			.onAppear {
-				Task {
-					await state.updatePonies()
-					await state.updateEpisodes()
-				}
+			.displayTask(activity: $activity, error: $error) {
+				async let ponies: Void = state.updatePonies()
+				async let episodes: Void = state.updateEpisodes()
+				_ = try await (ponies, episodes)
+
 			}
-			.alert(state.error?.localizedDescription ?? "", isPresented: $state.isShowingError) {
-				Button("OK", role: .cancel) { }
-			}
+			.activity($activity)
+			.alert(error: $error)
 		}
 	}
 }

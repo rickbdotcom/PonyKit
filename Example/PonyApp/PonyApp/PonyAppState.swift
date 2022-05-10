@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 import PonyKit
+import SwiftUI
 
 @MainActor
 class PonyAppState: ObservableObject {
@@ -16,8 +17,6 @@ class PonyAppState: ObservableObject {
 	@Published var selectedData: PonyDataSelection = .character
 	@Published var ponies: [Pony] = []
 	@Published var episodes: [Episode.Full] = []
-	@Published var error: Error?
-	@Published var isShowingError: Bool = false
 
 	enum PonyDataSelection: Int {
 		case character
@@ -26,22 +25,12 @@ class PonyAppState: ObservableObject {
 		case comics
 	}
 
-	func updatePonies() async {
-		do {
-			ponies = try await ponyService.allCharacters(query: nil)
-		} catch {
-			self.error = error
-			self.isShowingError = true
-		}
+	func updatePonies() async throws{
+		ponies = try await ponyService.allCharacters(query: nil)
 	}
 
-	func updateEpisodes() async {
-		do {
-			episodes = try await ponyService.allEpisodes(query: nil)
-		} catch {
-			self.error = error
-			self.isShowingError = true
-		}
+	func updateEpisodes() async throws{
+		episodes = try await ponyService.allEpisodes(query: nil)
 	}
 }
 

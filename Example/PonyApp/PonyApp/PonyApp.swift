@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct PonyApp: App {
-	@StateObject private var services = Services()
+	@StateObject private var appState = PonyAppState()
 
 	@State private var selection: PonyDataSelection = .character
 	@State private var error: Error?
@@ -19,15 +19,15 @@ struct PonyApp: App {
 	var body: some Scene {
 		WindowGroup {
 			NavigationView {
-				MainAppView(selectedData: $selection, ponies: $services.ponies, episodes: $services.episodes)
+				MainAppView(selectedData: $selection, ponies: $appState.ponies, episodes: $appState.episodes)
 					.navigationTitle("Ponies")
 					.environment(\.error, $error)
 					.environment(\.activity, $activity)
-					.environmentObject(services)
+					.environment(\.services, appState)
 			}
 			.displayTask(activity: $activity, error: $error) {
-				async let ponies: Void = services.updatePonies()
-				async let episodes: Void = services.updateEpisodes()
+				async let ponies: Void = appState.updatePonies()
+				async let episodes: Void = appState.updateEpisodes()
 				_ = try await (ponies, episodes)
 			}
 			.activity($activity)

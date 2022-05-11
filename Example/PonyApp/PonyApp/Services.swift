@@ -7,21 +7,25 @@
 
 import Combine
 import Foundation
-import PonyKit
 import SwiftUI
 
-@MainActor
-class Services: ObservableObject {
-	@Published var ponyService = PonyService.default
-	@Published var selectedData: PonyDataSelection = .character
-	@Published var ponies: [Pony] = []
-	@Published var episodes: [Episode.Full] = []
+protocol Services {
+	func updatePonies() async throws
+	func updateEpisodes() async throws
+}
 
-	func updatePonies() async throws {
-		ponies = try await ponyService.allCharacters(query: nil)
-	}
+struct EmptyServices: Services {
+	func updatePonies() async throws { }
+	func updateEpisodes() async throws { }
+}
 
-	func updateEpisodes() async throws{
-		episodes = try await ponyService.allEpisodes(query: nil)
+private struct ServicesKey: EnvironmentKey {
+	static let defaultValue: Services = EmptyServices()
+}
+
+extension EnvironmentValues {
+	var services: Services {
+		get { self[ServicesKey.self] }
+		set { self[ServicesKey.self] = newValue }
 	}
 }

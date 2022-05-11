@@ -18,6 +18,7 @@
 		0D9A0806282B447B0088660A /* PonyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A0805282B447B0088660A /* PonyDetail.swift */; };
 		0D9A080A282B45060088660A /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A0809282B45060088660A /* MainAppView.swift */; };
 		0D9A080E282B4E6C0088660A /* PonyDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */; };
+		0DF321DC282C04BC00EF7560 /* PonyAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF321DB282C04BC00EF7560 /* PonyAppState.swift */; };
 		0DF4612927B36A5100D9B678 /* PonyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4612827B36A5100D9B678 /* PonyList.swift */; };
 		0DF4612B27B36B9900D9B678 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4612A27B36B9900D9B678 /* Services.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		0D9A0805282B447B0088660A /* PonyDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyDetail.swift; sourceTree = "<group>"; };
 		0D9A0809282B45060088660A /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyDataPicker.swift; sourceTree = "<group>"; };
+		0DF321DB282C04BC00EF7560 /* PonyAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyAppState.swift; sourceTree = "<group>"; };
 		0DF4612827B36A5100D9B678 /* PonyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyList.swift; sourceTree = "<group>"; };
 		0DF4612A27B36B9900D9B678 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				0D5EC91B282AE4C600C05F10 /* Display.swift */,
 				0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */,
 				0DF4612A27B36B9900D9B678 /* Services.swift */,
+				0DF321DB282C04BC00EF7560 /* PonyAppState.swift */,
 				0D525D2327496A8C00FCBEB1 /* PonyApp.swift */,
 				0D9A0809282B45060088660A /* MainAppView.swift */,
 				0DF4612827B36A5100D9B678 /* PonyList.swift */,
@@ -192,6 +195,7 @@
 				0DF4612927B36A5100D9B678 /* PonyList.swift in Sources */,
 				0D9A080E282B4E6C0088660A /* PonyDataPicker.swift in Sources */,
 				0DF4612B27B36B9900D9B678 /* Services.swift in Sources */,
+				0DF321DC282C04BC00EF7560 /* PonyAppState.swift in Sources */,
 				0D9A0806282B447B0088660A /* PonyDetail.swift in Sources */,
 				0D15B88C27B5198F0033AC62 /* EpisodeList.swift in Sources */,
 				0D15B88D27B5198F0033AC62 /* EpisodeListCard.swift in Sources */,

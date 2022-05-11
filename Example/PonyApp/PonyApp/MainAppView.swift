@@ -14,8 +14,7 @@ struct MainAppView: View {
 	@Binding var ponies: [Pony]
 	@Binding var episodes: [Episode.Full]
 
-	@EnvironmentObject var services: Services
-
+	@Environment(\.services) var services
 	@Environment(\.error) var error
 
 	var body: some View {

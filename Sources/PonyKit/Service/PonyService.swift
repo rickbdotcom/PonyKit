@@ -1,8 +1,8 @@
 import EndpointKit
 import Foundation
 
-public class PonyService: PonyServiceProtocol {
-	let client: APIClient
+public class PonyService: PonyServiceProtocol, ObservableObject {
+	@Published var client: APIClient
 
 	public static let `default` = PonyService(client: APIClient(baseURL: "https://ponyweb.ml/v1", mapApiError: PonyService.mapApiError))
 

@@ -10,44 +10,25 @@ import SwiftUI
 
 @main
 struct PonyApp: App {
-	@StateObject private var state = PonyAppState()
+	@StateObject private var services = Services()
 
-	@State var error: Error?
-	@State var activity: Bool = false
+	@State private var selection: PonyDataSelection = .character
+	@State private var error: Error?
+	@State private var activity = false
 
 	var body: some Scene {
 		WindowGroup {
 			NavigationView {
-				VStack {
-					Picker("Data", selection: $state.selectedData.id) {
-						ForEach(PonyAppState.PonyDataSelection.allCases) {
-							Text($0.title)
-						}
-					}
-					.pickerStyle(SegmentedPickerStyle())
-
-					switch state.selectedData {
-					case .character:
-						PonyList(ponies: $state.ponies)
-							.displayRefreshable(error: $error) {
-								try await state.updatePonies()
-							}
-					case .episode:
-						EpisodeList(episodes: $state.episodes)
-							.displayRefreshable(error: $error) {
-								try await state.updateEpisodes()
-							}
-					default:
-						EmptyView()
-					}
-				}
-				.navigationTitle("Ponies")
+				MainAppView(selectedData: $selection, ponies: $services.ponies, episodes: $services.episodes)
+					.navigationTitle("Ponies")
+					.environment(\.error, $error)
+					.environment(\.activity, $activity)
+					.environmentObject(services)
 			}
 			.displayTask(activity: $activity, error: $error) {
-				async let ponies: Void = state.updatePonies()
-				async let episodes: Void = state.updateEpisodes()
+				async let ponies: Void = services.updatePonies()
+				async let episodes: Void = services.updateEpisodes()
 				_ = try await (ponies, episodes)
-
 			}
 			.activity($activity)
 			.alert(error: $error)

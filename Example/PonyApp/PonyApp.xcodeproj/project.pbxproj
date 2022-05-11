@@ -14,10 +14,12 @@
 		0D525D2427496A8C00FCBEB1 /* PonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D525D2327496A8C00FCBEB1 /* PonyApp.swift */; };
 		0D525D2827496A8E00FCBEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D525D2727496A8E00FCBEB1 /* Assets.xcassets */; };
 		0D525D2B27496A8E00FCBEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D525D2A27496A8E00FCBEB1 /* Preview Assets.xcassets */; };
-		0D5EC9192829D7DB00C05F10 /* PonyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EC9182829D7DA00C05F10 /* PonyDetail.swift */; };
 		0D5EC91C282AE4C600C05F10 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EC91B282AE4C600C05F10 /* Display.swift */; };
+		0D9A0806282B447B0088660A /* PonyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A0805282B447B0088660A /* PonyDetail.swift */; };
+		0D9A080A282B45060088660A /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A0809282B45060088660A /* MainAppView.swift */; };
+		0D9A080E282B4E6C0088660A /* PonyDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */; };
 		0DF4612927B36A5100D9B678 /* PonyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4612827B36A5100D9B678 /* PonyList.swift */; };
-		0DF4612B27B36B9900D9B678 /* PonyAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4612A27B36B9900D9B678 /* PonyAppState.swift */; };
+		0DF4612B27B36B9900D9B678 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4612A27B36B9900D9B678 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +31,12 @@
 		0D525D2327496A8C00FCBEB1 /* PonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyApp.swift; sourceTree = "<group>"; };
 		0D525D2727496A8E00FCBEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D525D2A27496A8E00FCBEB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0D5EC9182829D7DA00C05F10 /* PonyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PonyDetail.swift; path = PonyApp/PonyDetail.swift; sourceTree = "<group>"; };
 		0D5EC91B282AE4C600C05F10 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		0D9A0805282B447B0088660A /* PonyDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonyDetail.swift; sourceTree = "<group>"; };
+		0D9A0809282B45060088660A /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyDataPicker.swift; sourceTree = "<group>"; };
 		0DF4612827B36A5100D9B678 /* PonyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyList.swift; sourceTree = "<group>"; };
-		0DF4612A27B36B9900D9B678 /* PonyAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyAppState.swift; sourceTree = "<group>"; };
+		0DF4612A27B36B9900D9B678 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,6 @@
 		0D525D1727496A8C00FCBEB1 = {
 			isa = PBXGroup;
 			children = (
-				0D5EC9182829D7DA00C05F10 /* PonyDetail.swift */,
 				0D525D3127496AA400FCBEB1 /* Packages */,
 				0D525D2227496A8C00FCBEB1 /* PonyApp */,
 				0D525D2127496A8C00FCBEB1 /* Products */,
@@ -77,11 +80,14 @@
 		0D525D2227496A8C00FCBEB1 /* PonyApp */ = {
 			isa = PBXGroup;
 			children = (
-				0D525D2327496A8C00FCBEB1 /* PonyApp.swift */,
-				0DF4612A27B36B9900D9B678 /* PonyAppState.swift */,
 				0D5EC91B282AE4C600C05F10 /* Display.swift */,
+				0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */,
+				0DF4612A27B36B9900D9B678 /* Services.swift */,
+				0D525D2327496A8C00FCBEB1 /* PonyApp.swift */,
+				0D9A0809282B45060088660A /* MainAppView.swift */,
 				0DF4612827B36A5100D9B678 /* PonyList.swift */,
 				0D15B88827B442A40033AC62 /* PonyListCard.swift */,
+				0D9A0805282B447B0088660A /* PonyDetail.swift */,
 				0D15B88A27B5198F0033AC62 /* EpisodeList.swift */,
 				0D15B88B27B5198F0033AC62 /* EpisodeListCard.swift */,
 				0D525D2727496A8E00FCBEB1 /* Assets.xcassets */,
@@ -180,13 +186,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5EC91C282AE4C600C05F10 /* Display.swift in Sources */,
+				0D9A080A282B45060088660A /* MainAppView.swift in Sources */,
 				0D525D2427496A8C00FCBEB1 /* PonyApp.swift in Sources */,
 				0D15B88927B442A40033AC62 /* PonyListCard.swift in Sources */,
 				0DF4612927B36A5100D9B678 /* PonyList.swift in Sources */,
-				0DF4612B27B36B9900D9B678 /* PonyAppState.swift in Sources */,
+				0D9A080E282B4E6C0088660A /* PonyDataPicker.swift in Sources */,
+				0DF4612B27B36B9900D9B678 /* Services.swift in Sources */,
+				0D9A0806282B447B0088660A /* PonyDetail.swift in Sources */,
 				0D15B88C27B5198F0033AC62 /* EpisodeList.swift in Sources */,
 				0D15B88D27B5198F0033AC62 /* EpisodeListCard.swift in Sources */,
-				0D5EC9192829D7DB00C05F10 /* PonyDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

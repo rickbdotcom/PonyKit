@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 func taskDisplay(activity: Binding<Bool>? = nil, error errorBinding: Binding<Error?>? = nil, _ action: () async throws -> Void) async {
 	activity?.wrappedValue = true
 	do {
@@ -64,15 +63,9 @@ extension View {
 
 extension View {
 
-	func displayRefreshable(activity: Binding<Bool>? = nil, error: Binding<Error?>? = nil, _ action: @escaping @Sendable () async throws -> Void) -> some View {
+	func displayRefreshable(error: Binding<Error?>? = nil, _ action: @escaping @Sendable () async throws -> Void) -> some View {
 		refreshable {
-			await taskDisplay(activity: activity, error: error, action)
-		}
-	}
-
-	func displayRefreshable(activity: Binding<Bool>, _ action: @escaping @Sendable () async -> Void) -> some View {
-		refreshable {
-			await taskDisplay(activity: activity, action)
+			await taskDisplay(error: error, action)
 		}
 	}
 }
@@ -111,5 +104,27 @@ extension Binding where Value == Error? {
 				wrappedValue = nil
 			}
 		})
+	}
+}
+
+private struct ErrorKey: EnvironmentKey {
+	static let defaultValue: Binding<Error?> = .constant(nil)
+}
+
+extension EnvironmentValues {
+	var error: Binding<Error?> {
+		get { self[ErrorKey.self] }
+		set { self[ErrorKey.self] = newValue }
+	}
+}
+
+private struct ActivityKey: EnvironmentKey {
+	static let defaultValue: Binding<Bool> = .constant(false)
+}
+
+extension EnvironmentValues {
+	var activity: Binding<Bool> {
+		get { self[ActivityKey.self] }
+		set { self[ActivityKey.self] = newValue }
 	}
 }

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import PonyKit
 
-struct MainAppView: View {
+struct PonyDataSelectionView: View {
 	@Binding var selectedData: PonyDataSelection
 	@Binding var ponies: [Pony]
 	@Binding var episodes: [Episode.Full]

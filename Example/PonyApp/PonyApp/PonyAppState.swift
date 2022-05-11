@@ -16,6 +16,9 @@ class PonyAppState: Services, ObservableObject {
 	@Published var ponies: [Pony] = []
 	@Published var episodes: [Episode.Full] = []
 
+	nonisolated init() {
+	}
+
 	func updatePonies() async throws {
 		ponies = try await ponyService.allCharacters(query: nil)
 	}

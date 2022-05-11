@@ -17,3 +17,10 @@ struct EpisodeList: View {
 		}
 	}
 }
+
+struct EpisodeList_Previews: PreviewProvider {
+	static var previews: some View {
+		let episodes: Episodes = try! Bundle.main.decode(path: "episode_all")
+		return EpisodeList(episodes: .constant(episodes.data))
+	}
+}

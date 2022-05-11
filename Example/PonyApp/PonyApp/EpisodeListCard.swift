@@ -33,3 +33,10 @@ struct EpisodeListCard: View {
 		}
 	}
 }
+
+struct EpisodeListCard_Previews: PreviewProvider {
+	static var previews: some View {
+		let episodes: Episodes = try! Bundle.main.decode(path: "episode_all")
+		return EpisodeListCard(episode: episodes.data[0])
+	}
+}

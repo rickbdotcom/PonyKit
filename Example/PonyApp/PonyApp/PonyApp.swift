@@ -19,7 +19,7 @@ struct PonyApp: App {
 	var body: some Scene {
 		WindowGroup {
 			NavigationView {
-				MainAppView(selectedData: $selection, ponies: $appState.ponies, episodes: $appState.episodes)
+				PonyDataSelectionView(selectedData: $selection, ponies: $appState.ponies, episodes: $appState.episodes)
 					.navigationTitle("Ponies")
 					.environment(\.error, $error)
 					.environment(\.activity, $activity)

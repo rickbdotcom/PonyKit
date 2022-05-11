@@ -33,3 +33,10 @@ struct PonyListCard: View {
 		}
 	}
 }
+
+struct PonyListCard_Previews: PreviewProvider {
+	static var previews: some View {
+		let ponies: Ponies = try! Bundle.main.decode(path: "character_all")
+		return PonyListCard(pony: ponies.data[0])
+	}
+}

@@ -21,3 +21,10 @@ struct PonyList: View {
 		}
 	}
 }
+
+struct PonyList_Previews: PreviewProvider {
+	static var previews: some View {
+		let ponies: Ponies = try! Bundle.main.decode(path: "character_all")
+		return PonyList(ponies: .constant(ponies.data))
+	}
+}

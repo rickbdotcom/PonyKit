@@ -52,3 +52,17 @@ extension PonyDataSelection: CaseIterable, Identifiable {
 		}
 	}
 }
+
+struct PonyDataPicker_Previews: PreviewProvider {
+	static var previews: some View {
+		DynamicView()
+	}
+
+	struct DynamicView: View {
+		@State private var selection: PonyDataSelection = .character
+
+		var body: some View {
+			PonyDataPicker(selection: $selection)
+		}
+	}
+}

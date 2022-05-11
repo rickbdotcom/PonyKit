@@ -1,0 +1,677 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": 1,
+      "name": "Friendship is Magic, part 1",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/9/9f/Twilight_looks_up_at_the_moon_S1E01.png/revision/latest?cb=20121209043547",
+      "url": "https://mlp.fandom.com/wiki/Friendship_is_Magic,_part_1",
+      "season": 1,
+      "episode": 1,
+      "overall": 1,
+      "airdate": "2010-10-10",
+      "writtenby": "Lauren Faust",
+      "storyboard": "Tom Sales\nMike West\nSherann Johnson\nSam To"
+    },
+    {
+      "id": 2,
+      "name": "Friendship is Magic, part 2",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/2/2c/Main_ponies_activated_the_Elements_of_Harmony_S01E02.png/revision/latest?cb=20111205172131",
+      "url": "https://mlp.fandom.com/wiki/Friendship_is_Magic,_part_2",
+      "season": 1,
+      "episode": 2,
+      "overall": 2,
+      "airdate": "2010-10-22",
+      "writtenby": "Lauren Faust",
+      "storyboard": "Tom Sales\nMike West\nSherann Johnson\nSam To",
+      "song": [
+        "Laughter Song"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Ticket Master",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/37/Twilight_Sparkle_overjoyed_about_tickets_S1E03.png/revision/latest?cb=20130103015746",
+      "url": "https://mlp.fandom.com/wiki/The_Ticket_Master",
+      "season": 1,
+      "episode": 3,
+      "overall": 3,
+      "airdate": "2010-10-29",
+      "writtenby": "Amy Keating Rogers\nLauren Faust",
+      "storyboard": "Alex Basio\nKevin Schimdt",
+      "song": [
+        "Pinkie's Gala Fantasy Song",
+        "The Ticket Song"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Applebuck Season",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/8/85/Big_McIntosh_and_Applejack_looking_at_Sweet_Apple_Acres_S01E04.png/revision/latest?cb=20200311194616",
+      "url": "https://mlp.fandom.com/wiki/Applebuck_Season",
+      "season": 1,
+      "episode": 4,
+      "overall": 4,
+      "airdate": "2010-11-05",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Sherann Johnson\nMike West"
+    },
+    {
+      "id": 5,
+      "name": "Griffon the Brush Off",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/5/57/Gilda_pointing_at_Pinkie_S1E5.png/revision/latest?cb=20130106052926",
+      "url": "https://mlp.fandom.com/wiki/Griffon_the_Brush_Off",
+      "season": 1,
+      "episode": 5,
+      "overall": 5,
+      "airdate": "2010-11-12",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Tom Sales\nSam To"
+    },
+    {
+      "id": 6,
+      "name": "Boast Busters",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/a/ab/Trixie%27s_flashy_stage_S1E06.png/revision/latest?cb=20121009174325",
+      "url": "https://mlp.fandom.com/wiki/Boast_Busters",
+      "season": 1,
+      "episode": 6,
+      "overall": 6,
+      "airdate": "2010-11-19",
+      "writtenby": "Chris Savino",
+      "storyboard": "Kevin Schmidt\nAlex Basio"
+    },
+    {
+      "id": 7,
+      "name": "Dragonshy",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/5/51/Fluttershy_notices_the_smoke_S01E07.png/revision/latest?cb=20130103050304",
+      "url": "https://mlp.fandom.com/wiki/Dragonshy",
+      "season": 1,
+      "episode": 7,
+      "overall": 7,
+      "airdate": "2010-11-26",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang",
+      "song": [
+        "Hop Skip and Jump song",
+        "Hop Skip Jump Song (original)"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Look Before You Sleep",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/c/ce/Rarity%2C_Applejack_and_Twilight_makeovers_S01E08.png/revision/latest?cb=20200313112345",
+      "url": "https://mlp.fandom.com/wiki/Look_Before_You_Sleep",
+      "season": 1,
+      "episode": 8,
+      "overall": 8,
+      "airdate": "2010-12-03",
+      "writtenby": "Charlotte Fullerton",
+      "storyboard": "Francisco Avalos\nMike West"
+    },
+    {
+      "id": 9,
+      "name": "Bridle Gossip",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/ff/Zecora_S01E09.png/revision/latest?cb=20130103054500",
+      "url": "https://mlp.fandom.com/wiki/Bridle_Gossip",
+      "season": 1,
+      "episode": 9,
+      "overall": 9,
+      "airdate": "2010-12-10",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Sherann Johnson\nSam To",
+      "song": [
+        "Evil Enchantress (Pinkie Pie's rendition)",
+        "Evil Enchantress (Fluttershy's rendition)"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Swarm of the Century",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/e/ef/Main_ponies_at_Fluttershy%27s_cottage_looking_nervous_S1E10.png/revision/latest?cb=20200313032202",
+      "url": "https://mlp.fandom.com/wiki/Swarm_of_the_Century",
+      "season": 1,
+      "episode": 10,
+      "overall": 10,
+      "airdate": "2010-12-17",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Tom Sales\nLih Liau"
+    },
+    {
+      "id": 11,
+      "name": "Winter Wrap Up",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/3b/Spotlight_on_Twilight_Sparkle_S1E11.png/revision/latest?cb=20200313205106",
+      "url": "https://mlp.fandom.com/wiki/Winter_Wrap_Up",
+      "season": 1,
+      "episode": 11,
+      "overall": 11,
+      "airdate": "2010-12-24",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Kenny Park\nAlex Basio\nJocelyn Theissen (song)",
+      "song": [
+        "Winter Wrap Up"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Call of the Cutie",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/b/b3/Apple_Bloom%27s_blank_flank_is_revealed_S1E12.png/revision/latest?cb=20130106090036",
+      "url": "https://mlp.fandom.com/wiki/Call_of_the_Cutie",
+      "season": 1,
+      "episode": 12,
+      "overall": 12,
+      "airdate": "2011-01-07",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang",
+      "song": [
+        "Cupcake Song"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Fall Weather Friends",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/3a/Applejack_%26_Rainbow_brohoof_S1E13.png/revision/latest?cb=20120310072234",
+      "url": "https://mlp.fandom.com/wiki/Fall_Weather_Friends",
+      "season": 1,
+      "episode": 13,
+      "overall": 13,
+      "airdate": "2011-01-28",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Andy Bartlett\nFrancisco Avalos"
+    },
+    {
+      "id": 14,
+      "name": "Suited For Success",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/1/12/Rarity_being_overwhelmed_with_pressure_S1E14.png/revision/latest?cb=20200313112450",
+      "url": "https://mlp.fandom.com/wiki/Suited_For_Success",
+      "season": 1,
+      "episode": 14,
+      "overall": 14,
+      "airdate": "2011-02-04",
+      "writtenby": "Charlotte Fullerton",
+      "storyboard": "Mike West (first half, first song, fashion show)\nSherann Johnson (second half, song reprise)",
+      "song": [
+        "Art of the Dress",
+        "Art of the Dress (Reprise)"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Feeling Pinkie Keen",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f7/Pinkie_vibrating_S01E15.png/revision/latest?cb=20200313050645",
+      "url": "https://mlp.fandom.com/wiki/Feeling_Pinkie_Keen",
+      "season": 1,
+      "episode": 15,
+      "overall": 15,
+      "airdate": "2011-02-11",
+      "writtenby": "Dave Polsky",
+      "storyboard": "Scott Underwood\nTom Sales"
+    },
+    {
+      "id": 16,
+      "name": "Sonic Rainboom",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/b/be/Rainbow_Dash_performing_Sonic_Rainboom_S01E16.png/revision/latest?cb=20130103074703",
+      "url": "https://mlp.fandom.com/wiki/Sonic_Rainboom",
+      "season": 1,
+      "episode": 16,
+      "overall": 16,
+      "airdate": "2011-02-18",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Alex Basio\nKenny Park"
+    },
+    {
+      "id": 17,
+      "name": "Stare Master",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/64/Fluttershy_staring_at_chickens_S01E17.png/revision/latest?cb=20200312150751",
+      "url": "https://mlp.fandom.com/wiki/Stare_Master",
+      "season": 1,
+      "episode": 17,
+      "overall": 17,
+      "airdate": "2011-02-25",
+      "writtenby": "Chris Savino",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang",
+      "song": [
+        "Hush Now Lullaby (Fluttershy)",
+        "Hush Now Lullaby (Sweetie Belle)"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "The Show Stoppers",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/b/b3/Cutie_Mark_Crusaders_song_S1E18.png/revision/latest?cb=20200310155020",
+      "url": "https://mlp.fandom.com/wiki/The_Show_Stoppers",
+      "season": 1,
+      "episode": 18,
+      "overall": 18,
+      "airdate": "2011-03-04",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Scott Jeralds\nFrancisco Avalos",
+      "song": [
+        "Cutie Mark Crusaders Song"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "A Dog and Pony Show",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f6/Rarity_in_front_of_the_Diamond_Dogs_S1E19.png/revision/latest?cb=20130104080716",
+      "url": "https://mlp.fandom.com/wiki/A_Dog_and_Pony_Show",
+      "season": 1,
+      "episode": 19,
+      "overall": 19,
+      "airdate": "2011-03-11",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Mike West\nSherann Johnson"
+    },
+    {
+      "id": 20,
+      "name": "Green Isn't Your Color",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f8/Fluttershy_photoshoot_2_S1E20.png/revision/latest?cb=20130711192135",
+      "url": "https://mlp.fandom.com/wiki/Green_Isn%27t_Your_Color",
+      "season": 1,
+      "episode": 20,
+      "overall": 20,
+      "airdate": "2011-03-18",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Tom Sales\nSam To"
+    },
+    {
+      "id": 21,
+      "name": "Over a Barrel",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/67/Appleloosa_Preparing_For_Battle_S1E21.png/revision/latest?cb=20200311194311",
+      "url": "https://mlp.fandom.com/wiki/Over_a_Barrel",
+      "season": 1,
+      "episode": 21,
+      "overall": 21,
+      "airdate": "2011-03-25",
+      "writtenby": "Dave Polsky",
+      "storyboard": "Kenny Park\nLih Liau",
+      "song": [
+        "You Got to Share, You Got to Care"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "A Bird in the Hoof",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/ff/Fluttershy_holding_Philomena_S01E22.png/revision/latest?cb=20200312150711",
+      "url": "https://mlp.fandom.com/wiki/A_Bird_in_the_Hoof",
+      "season": 1,
+      "episode": 22,
+      "overall": 22,
+      "airdate": "2011-04-08",
+      "writtenby": "Charlotte Fullerton",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang"
+    },
+    {
+      "id": 23,
+      "name": "The Cutie Mark Chronicles",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/c/c0/Rainbow_Dash_shows_her_cutie_mark_S01E23.png/revision/latest?cb=20130103072422",
+      "url": "https://mlp.fandom.com/wiki/The_Cutie_Mark_Chronicles",
+      "season": 1,
+      "episode": 23,
+      "overall": 23,
+      "airdate": "2011-04-15",
+      "writtenby": "M. A. Larson",
+      "storyboard": "\"Big\" Jim Miller\nFrancisco Avalos",
+      "song": [
+        "So Many Wonders"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Owl's Well That Ends Well",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/6a/Spike_%27Got_it%21%27_S1E24.png/revision/latest?cb=20130104084345",
+      "url": "https://mlp.fandom.com/wiki/Owl%27s_Well_That_Ends_Well",
+      "season": 1,
+      "episode": 24,
+      "overall": 24,
+      "airdate": "2011-04-22",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Mike West\nSherann Johnson"
+    },
+    {
+      "id": 25,
+      "name": "Party of One",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f8/Pinkie_Pie_surrounded_by_darkness_under_a_cone_of_light_S01E25.png/revision/latest?cb=20130102101302",
+      "url": "https://mlp.fandom.com/wiki/Party_of_One",
+      "season": 1,
+      "episode": 25,
+      "overall": 25,
+      "airdate": "2011-04-29",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Tom Sales\nSam To",
+      "song": [
+        "Pinkie Pie's Singing Telegram"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "The Best Night Ever",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/2/20/Main_Six_determined_to_have_the_Best_Night_Ever_S1E26.png/revision/latest?cb=20200313041316",
+      "url": "https://mlp.fandom.com/wiki/The_Best_Night_Ever",
+      "season": 1,
+      "episode": 26,
+      "overall": 26,
+      "airdate": "2011-05-06",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Kenny Park\nLih Liau\nJocelan Thiessen (song)",
+      "song": [
+        "At the Gala",
+        "I'm at the Grand Galloping Gala",
+        "Pony Pokey"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "The Return of Harmony Part 1",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f4/Statue_of_Discord_cracking_S2E01.png/revision/latest?cb=20130101195722",
+      "url": "https://mlp.fandom.com/wiki/The_Return_of_Harmony_Part_1",
+      "season": 2,
+      "episode": 1,
+      "overall": 27,
+      "airdate": "2011-09-17",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Tom Sales\nSabrina Alberghetti"
+    },
+    {
+      "id": 28,
+      "name": "The Return of Harmony Part 2",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/8/88/Discord%2C_%22First_changes_of_Ponyville%22_S02E02.png/revision/latest?cb=20120601221808",
+      "url": "https://mlp.fandom.com/wiki/The_Return_of_Harmony_Part_2",
+      "season": 2,
+      "episode": 2,
+      "overall": 28,
+      "airdate": "2011-09-24",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Kenny Park\nMike West"
+    },
+    {
+      "id": 29,
+      "name": "Lesson Zero",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/69/Clock_is_ticking_S02E03.png/revision/latest?cb=20120102050001",
+      "url": "https://mlp.fandom.com/wiki/Lesson_Zero",
+      "season": 2,
+      "episode": 3,
+      "overall": 29,
+      "airdate": "2011-10-15",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Raven Molisee\nNicole Wang"
+    },
+    {
+      "id": 30,
+      "name": "Luna Eclipsed",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/c/c2/Twilight_and_Luna_S2E04.png/revision/latest?cb=20120908103033",
+      "url": "https://mlp.fandom.com/wiki/Luna_Eclipsed",
+      "season": 2,
+      "episode": 4,
+      "overall": 30,
+      "airdate": "2011-10-22",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Kenny Park\nMarshall Fels Elliott"
+    },
+    {
+      "id": 31,
+      "name": "Sisterhooves Social",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/30/Rarity_looking_at_Sweetie_Belle%27s_drawing_S02E05.png/revision/latest?cb=20111107080103",
+      "url": "https://mlp.fandom.com/wiki/Sisterhooves_Social",
+      "season": 2,
+      "episode": 5,
+      "overall": 31,
+      "airdate": "2011-11-05",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Sherann Johnson\nCorey Toomey"
+    },
+    {
+      "id": 32,
+      "name": "The Cutie Pox",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/7/7e/Picture_of_the_pony_with_cutie_pox_S02E06.png/revision/latest?cb=20111114060416",
+      "url": "https://mlp.fandom.com/wiki/The_Cutie_Pox",
+      "season": 2,
+      "episode": 6,
+      "overall": 32,
+      "airdate": "2011-11-12",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Tom Sales\nDave Weibe"
+    },
+    {
+      "id": 33,
+      "name": "May the Best Pet Win!",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/e/eb/Rainbow_Dash%27s_Speech_S2E7.png/revision/latest?cb=20120810042146",
+      "url": "https://mlp.fandom.com/wiki/May_the_Best_Pet_Win!",
+      "season": 2,
+      "episode": 7,
+      "overall": 33,
+      "airdate": "2011-11-19",
+      "writtenby": "Charlotte Fullerton",
+      "storyboard": "Joel Dickie\nEmmett Hall",
+      "song": [
+        "Find A Pet Song"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "The Mysterious Mare Do Well",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/9/93/The_Mysterious_Mare_Do_Well_S02E08.png/revision/latest?cb=20120911200936",
+      "url": "https://mlp.fandom.com/wiki/The_Mysterious_Mare_Do_Well",
+      "season": 2,
+      "episode": 8,
+      "overall": 34,
+      "airdate": "2011-11-26",
+      "writtenby": "Merriwether Williams",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang"
+    },
+    {
+      "id": 35,
+      "name": "Sweet and Elite",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/5/57/Canterlot_speaks_about_Rarity_S2E9.png/revision/latest?cb=20111204163048",
+      "url": "https://mlp.fandom.com/wiki/Sweet_and_Elite",
+      "season": 2,
+      "episode": 9,
+      "overall": 35,
+      "airdate": "2011-12-03",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Kenny Park\nMarshall Elliott\nJocelan Thiessen (song)",
+      "song": [
+        "Becoming Popular (The Pony Everypony Should Know)"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Secret of My Excess",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/f/f7/Spike_grown_up_S2E10.png/revision/latest?cb=20120123140441",
+      "url": "https://mlp.fandom.com/wiki/Secret_of_My_Excess",
+      "season": 2,
+      "episode": 10,
+      "overall": 36,
+      "airdate": "2011-12-10",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Raven Molisee\nDavid Dick"
+    },
+    {
+      "id": 37,
+      "name": "Hearth's Warming Eve",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/3f/Commander_Hurricane%2C_Chancellor_Puddinghead_and_Princess_Platinum_arguing_S02E11.png/revision/latest?cb=20111219045243",
+      "url": "https://mlp.fandom.com/wiki/Hearth%27s_Warming_Eve",
+      "season": 2,
+      "episode": 11,
+      "overall": 37,
+      "airdate": "2011-12-17",
+      "writtenby": "Merriwether Williams",
+      "storyboard": "Joel Dickie\nEmmett Hall",
+      "song": [
+        "The Heart Carol"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Family Appreciation Day",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/9/9b/Granny_Smith_Apple_Bloom_hug_S2E12.png/revision/latest?cb=20120110160842",
+      "url": "https://mlp.fandom.com/wiki/Family_Appreciation_Day",
+      "season": 2,
+      "episode": 12,
+      "overall": 38,
+      "airdate": "2012-01-07",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Sherann Johnson\nJustin Nichols"
+    },
+    {
+      "id": 39,
+      "name": "Baby Cakes",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/8/83/Pinkie_Pie_as_a_pig_S2E13.png/revision/latest?cb=20130325042948",
+      "url": "https://mlp.fandom.com/wiki/Baby_Cakes",
+      "season": 2,
+      "episode": 13,
+      "overall": 39,
+      "airdate": "2012-01-14",
+      "writtenby": "Charlotte Fullerton",
+      "storyboard": "Tom Sales\nCorey Toomey",
+      "song": [
+        "Happy Monthiversary",
+        "Piggy Dance"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "The Last Roundup",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/65/Meeting_Cherry_Jubilee_S02E14.png/revision/latest?cb=20120326235917",
+      "url": "https://mlp.fandom.com/wiki/The_Last_Roundup",
+      "season": 2,
+      "episode": 14,
+      "overall": 40,
+      "airdate": "2012-01-21",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang"
+    },
+    {
+      "id": 41,
+      "name": "The Super Speedy Cider Squeezy 6000",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/4/49/Crowd_looking_at_the_Super_Speedy_Cider_Squeezy_6000_S2E15.png/revision/latest?cb=20120205041329",
+      "url": "https://mlp.fandom.com/wiki/The_Super_Speedy_Cider_Squeezy_6000",
+      "season": 2,
+      "episode": 15,
+      "overall": 41,
+      "airdate": "2012-01-28",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Kenny Park\nMarshall Elliott",
+      "song": [
+        "The Flim Flam Brothers"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Read It and Weep",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/6/65/Rainbow_Dash_holding_Daring_Do_book_S2E16.png/revision/latest?cb=20121003140014",
+      "url": "https://mlp.fandom.com/wiki/Read_It_and_Weep",
+      "season": 2,
+      "episode": 16,
+      "overall": 42,
+      "airdate": "2012-02-04",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Raven M. Molisee\nDave Wiebe"
+    },
+    {
+      "id": 43,
+      "name": "Hearts and Hooves Day",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/9/96/Cheerilee_and_Big_Mac_with_CMC_picnic_S02E17.png/revision/latest?cb=20120211163806",
+      "url": "https://mlp.fandom.com/wiki/Hearts_and_Hooves_Day",
+      "season": 2,
+      "episode": 17,
+      "overall": 43,
+      "airdate": "2012-02-11",
+      "writtenby": "Meghan McCarthy",
+      "storyboard": "Sherann Johnson\nJustin Nichols",
+      "song": [
+        "The Perfect Stallion"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "A Friend in Deed",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/3d/Pinkie_Pie_Introduce_Myself_S2E18.png/revision/latest?cb=20120220051007",
+      "url": "https://mlp.fandom.com/wiki/A_Friend_in_Deed",
+      "season": 2,
+      "episode": 18,
+      "overall": 44,
+      "airdate": "2012-02-18",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Tom Sales\nCorey Toomey",
+      "song": [
+        "Smile Song",
+        "Cranky Doodle Donkey",
+        "Welcome Song",
+        "Cranky Doodle Joy"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Putting Your Hoof Down",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/8/80/Scared_Fluttershy_2_S2E19.png/revision/latest?cb=20120313075148",
+      "url": "https://mlp.fandom.com/wiki/Putting_Your_Hoof_Down",
+      "season": 2,
+      "episode": 19,
+      "overall": 45,
+      "airdate": "2012-03-03",
+      "storyby": "Charlotte Fullerton",
+      "writtenby": "Merriwether Williams",
+      "storyboard": "Joel Dickie\nEmmett Hall"
+    },
+    {
+      "id": 46,
+      "name": "It's About Time",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/3/3a/Twilight_talks_with_Twilight_S2E20.png/revision/latest?cb=20130123081125",
+      "url": "https://mlp.fandom.com/wiki/It%27s_About_Time",
+      "season": 2,
+      "episode": 20,
+      "overall": 46,
+      "airdate": "2012-03-10",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Sabrina Alberghetti\nNicole Wang"
+    },
+    {
+      "id": 47,
+      "name": "Dragon Quest",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/7/7c/Spike_looking_at_dragons_S2E21.png/revision/latest?cb=20121120132602",
+      "url": "https://mlp.fandom.com/wiki/Dragon_Quest",
+      "season": 2,
+      "episode": 21,
+      "overall": 47,
+      "airdate": "2012-03-17",
+      "writtenby": "Merriwether Williams",
+      "storyboard": "Kenny Park\nMarshall Fels Elliott"
+    },
+    {
+      "id": 48,
+      "name": "Hurricane Fluttershy",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/e/e0/Fluttershy_flying_to_the_sun_S2E22.png/revision/latest?cb=20120429232942",
+      "url": "https://mlp.fandom.com/wiki/Hurricane_Fluttershy",
+      "season": 2,
+      "episode": 22,
+      "overall": 48,
+      "airdate": "2012-03-24",
+      "writtenby": "Cindy Morrow",
+      "storyboard": "Raven M. Molisee\nDave Weibe"
+    },
+    {
+      "id": 49,
+      "name": "Ponyville Confidential",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/c/cc/CMC_meeting_with_Diamond_Tiara_S2E23.png/revision/latest?cb=20121226122752",
+      "url": "https://mlp.fandom.com/wiki/Ponyville_Confidential",
+      "season": 2,
+      "episode": 23,
+      "overall": 49,
+      "airdate": "2012-03-31",
+      "writtenby": "M. A. Larson",
+      "storyboard": "Sherann Johnson\nJustin Nichols"
+    },
+    {
+      "id": 50,
+      "name": "MMMystery on the Friendship Express",
+      "image": "https://vignette.wikia.nocookie.net/mlp/images/7/70/Pinkie_with_the_line_of_passengers_S2E24.png/revision/latest?cb=20121221083438",
+      "url": "https://mlp.fandom.com/wiki/MMMystery_on_the_Friendship_Express",
+      "season": 2,
+      "episode": 24,
+      "overall": 50,
+      "airdate": "2012-04-07",
+      "writtenby": "Amy Keating Rogers",
+      "storyboard": "Tom Sales\nCorey Toomey"
+    }
+  ]
+}

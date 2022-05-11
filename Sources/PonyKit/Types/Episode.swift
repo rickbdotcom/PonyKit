@@ -1,14 +1,15 @@
 import Foundation
 
-public enum EpisodeType {
+public enum EpisodeType: String, Equatable {
 	case none, id, name, full
 }
-public enum Episode: Decodable {
+
+public enum Episode: Decodable, Equatable {
 	case id(Int)
 	case title(String)
 	case full(Full)
 
-	public struct Full: Identifiable, Decodable {
+	public struct Full: Identifiable, Decodable, Equatable {
 		public let id: Int
 		public let name: String
 		public let image: Image
@@ -24,7 +25,7 @@ public enum Episode: Decodable {
 	}
 }
 
-public struct Episodes: Decodable {
+public struct Episodes: Decodable, Equatable {
 	public let data: [Episode.Full]
 	public let status: Int
 	public let warning: String?

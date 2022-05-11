@@ -1,13 +1,13 @@
 import Foundation
 
-public enum SongType: String, Encodable {
+public enum SongType: String, Encodable, Equatable {
 	case none, id, name, video, full
 }
 
-public enum Song: Decodable {
+public enum Song: Decodable, Equatable {
 	case id([Int]), string([String]), full([Full])
 
-	public struct Full: Identifiable, Decodable {
+	public struct Full: Identifiable, Decodable, Equatable {
 		public let id: Int
 		public let name: String
 		public let video: String

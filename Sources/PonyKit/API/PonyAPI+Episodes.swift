@@ -1,37 +1,62 @@
 import EndpointKit
 import Foundation
 
-protocol EpisodeQueryEndpoint: APIEndpoint where Parameters == EpisodeQueryParameters, Response == Episodes {
+public protocol EpisodeQueryEndpoint: APIEndpoint where Parameters == EpisodeQueryParameters, Response == Episodes {
 }
 
-struct GetAllEpisodes: EpisodeQueryEndpoint {
-	let parameters: EpisodeQueryParameters
-	let endpoint: Endpoint = "GET episode/all"
+public struct GetAllEpisodes: EpisodeQueryEndpoint {
+	public let parameters: EpisodeQueryParameters
+	public let endpoint: Endpoint = "GET episode/all"
+
+	public init(parameters: EpisodeQueryParameters) {
+		self.parameters = parameters
+	}
 }
 
-struct GetEpisodesById: EpisodeQueryEndpoint {
-	let id: Int
-	let parameters: EpisodeQueryParameters
-	var endpoint: Endpoint { .init("episode/\(id)", .get) }
+public struct GetEpisodesById: EpisodeQueryEndpoint {
+	public let id: Int
+	public let parameters: EpisodeQueryParameters
+	public var endpoint: Endpoint { .init("episode/\(id)", .get) }
+
+	public init(id: Int, parameters: EpisodeQueryParameters) {
+		self.id = id
+		self.parameters = parameters
+	}
 }
 
-struct GetEpisodesByOverall: EpisodeQueryEndpoint {
-	let overall: Int
-	let parameters: EpisodeQueryParameters
-	var endpoint: Endpoint { .init("episode/by-overall/\(overall)", .get) }
+public struct GetEpisodesByOverall: EpisodeQueryEndpoint {
+	public let overall: Int
+	public let parameters: EpisodeQueryParameters
+	public var endpoint: Endpoint { .init("episode/by-overall/\(overall)", .get) }
+
+	public init(overall: Int, parameters: EpisodeQueryParameters) {
+		self.overall = overall
+		self.parameters = parameters
+	}
 }
 
-struct GetEpisodesBySeasonEpisode: EpisodeQueryEndpoint {
-	let season: Int
-	let episode: Int?
-	let parameters: EpisodeQueryParameters
-	var endpoint: Endpoint { .init("episode/by-season/\(season)/\(episode.flatMap { String($0) } ?? "all")", .get) }
+public struct GetEpisodesBySeasonEpisode: EpisodeQueryEndpoint {
+	public let season: Int
+	public let episode: Int?
+	public let parameters: EpisodeQueryParameters
+	public var endpoint: Endpoint { .init("episode/by-season/\(season)/\(episode.flatMap { String($0) } ?? "all")", .get) }
+
+	public init(season: Int, episode: Int?, parameters: EpisodeQueryParameters) {
+		self.season = season
+		self.episode = episode
+		self.parameters = parameters
+	}
 }
 
-struct GetEpisodesByAuthor: EpisodeQueryEndpoint {
-	let author: String
-	let parameters: EpisodeQueryParameters
-	var endpoint: Endpoint { .init("episode/by-author/\(author)", .get) }
+public struct GetEpisodesByAuthor: EpisodeQueryEndpoint {
+	public let author: String
+	public let parameters: EpisodeQueryParameters
+	public var endpoint: Endpoint { .init("episode/by-author/\(author)", .get) }
+
+	public init(author: String, parameters: EpisodeQueryParameters) {
+		self.author = author
+		self.parameters = parameters
+	}
 }
 
 public struct EpisodeQueryParameters: Encodable {

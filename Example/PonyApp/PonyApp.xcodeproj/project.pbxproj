@@ -93,8 +93,6 @@
 				0D5EC91B282AE4C600C05F10 /* Display.swift */,
 				0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */,
 				0DF4612A27B36B9900D9B678 /* Services.swift */,
-				0D39E193282C48B900AA49D6 /* Mock.swift */,
-				0DF321DB282C04BC00EF7560 /* PonyAppState.swift */,
 				0D525D2327496A8C00FCBEB1 /* PonyApp.swift */,
 				0D9A0809282B45060088660A /* PonyDataSelectionView.swift */,
 				0DF4612827B36A5100D9B678 /* PonyList.swift */,
@@ -102,7 +100,9 @@
 				0D9A0805282B447B0088660A /* PonyDetail.swift */,
 				0D15B88A27B5198F0033AC62 /* EpisodeList.swift */,
 				0D15B88B27B5198F0033AC62 /* EpisodeListCard.swift */,
+				0DF321DB282C04BC00EF7560 /* PonyAppState.swift */,
 				0D39E191282C3B8900AA49D6 /* Bundle.swift */,
+				0D39E193282C48B900AA49D6 /* Mock.swift */,
 				0D525D2727496A8E00FCBEB1 /* Assets.xcassets */,
 				0D525D2927496A8E00FCBEB1 /* Preview Content */,
 			);

@@ -1,10 +1,10 @@
 import Foundation
 
-public enum TimeType: String, Encodable {
+public enum TimeType: String, Encodable, Equatable {
 	case iso, second
 }
 
-public enum Time: Decodable {
+public enum Time: Decodable, Equatable {
 	case iso(String), seconds(Int)
 }
 

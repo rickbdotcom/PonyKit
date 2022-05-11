@@ -1,10 +1,10 @@
 import Foundation
 
-public enum DateType: String, Encodable {
+public enum DateType: String, Encodable, Equatable {
 	case iso, american, european, timestamp
 }
 
-public enum APIDate: Decodable {
+public enum APIDate: Decodable, Equatable {
 	case dateString(String), timestamp(Int)
 }
 

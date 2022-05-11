@@ -26,9 +26,7 @@ struct PonyApp: App {
 					.environment(\.services, appState)
 			}
 			.displayTask(activity: $activity, error: $error) {
-				async let ponies: Void = appState.updatePonies()
-				async let episodes: Void = appState.updateEpisodes()
-				_ = try await (ponies, episodes)
+				try await appState.initialize()
 			}
 			.activity($activity)
 			.alert(error: $error)

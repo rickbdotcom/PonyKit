@@ -19,6 +19,12 @@ class PonyAppState: Services, ObservableObject {
 	nonisolated init() {
 	}
 
+	func initialize() async throws {
+		async let ponies: Void = updatePonies()
+		async let episodes: Void = updateEpisodes()
+		_ = try await (ponies, episodes)
+	}
+
 	func updatePonies() async throws {
 		ponies = try await ponyService.allCharacters(query: nil)
 	}

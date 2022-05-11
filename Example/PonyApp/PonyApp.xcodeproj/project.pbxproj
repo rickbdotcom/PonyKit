@@ -14,6 +14,7 @@
 		0D39E18D282C3AAD00AA49D6 /* episode_all.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D39E18B282C3AAD00AA49D6 /* episode_all.json */; };
 		0D39E18E282C3AAD00AA49D6 /* character_all.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D39E18C282C3AAD00AA49D6 /* character_all.json */; };
 		0D39E192282C3B8900AA49D6 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39E191282C3B8900AA49D6 /* Bundle.swift */; };
+		0D39E194282C48B900AA49D6 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39E193282C48B900AA49D6 /* Mock.swift */; };
 		0D525D2427496A8C00FCBEB1 /* PonyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D525D2327496A8C00FCBEB1 /* PonyApp.swift */; };
 		0D525D2827496A8E00FCBEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D525D2727496A8E00FCBEB1 /* Assets.xcassets */; };
 		0D525D2B27496A8E00FCBEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D525D2A27496A8E00FCBEB1 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		0D39E18B282C3AAD00AA49D6 /* episode_all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = episode_all.json; sourceTree = "<group>"; };
 		0D39E18C282C3AAD00AA49D6 /* character_all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character_all.json; sourceTree = "<group>"; };
 		0D39E191282C3B8900AA49D6 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		0D39E193282C48B900AA49D6 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		0D525D2027496A8C00FCBEB1 /* PonyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PonyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D525D2327496A8C00FCBEB1 /* PonyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonyApp.swift; sourceTree = "<group>"; };
 		0D525D2727496A8E00FCBEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				0D5EC91B282AE4C600C05F10 /* Display.swift */,
 				0D9A080D282B4E6C0088660A /* PonyDataPicker.swift */,
 				0DF4612A27B36B9900D9B678 /* Services.swift */,
+				0D39E193282C48B900AA49D6 /* Mock.swift */,
 				0DF321DB282C04BC00EF7560 /* PonyAppState.swift */,
 				0D525D2327496A8C00FCBEB1 /* PonyApp.swift */,
 				0D9A0809282B45060088660A /* PonyDataSelectionView.swift */,
@@ -210,6 +213,7 @@
 				0DF321DC282C04BC00EF7560 /* PonyAppState.swift in Sources */,
 				0D9A0806282B447B0088660A /* PonyDetail.swift in Sources */,
 				0D15B88C27B5198F0033AC62 /* EpisodeList.swift in Sources */,
+				0D39E194282C48B900AA49D6 /* Mock.swift in Sources */,
 				0D15B88D27B5198F0033AC62 /* EpisodeListCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

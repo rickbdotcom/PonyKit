@@ -1,15 +1,15 @@
 import Foundation
 
-public enum KindType: String, Encodable {
+public enum KindType: String, Encodable, Equatable {
 	case none, id, name, full
 }
 
-public enum Kind: Decodable {
+public enum Kind: Decodable, Equatable {
 	case id(Int)
 	case name(String)
 	case full(Full)
 
-	public struct Full: Decodable {
+	public struct Full: Decodable, Equatable {
 		let id: Int
 		let name: String
 		let url: URL

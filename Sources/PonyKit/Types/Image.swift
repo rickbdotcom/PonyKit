@@ -1,15 +1,15 @@
 import Foundation
 
-public enum ImageType: String, Encodable {
+public enum ImageType: String, Encodable, Equatable {
 	case none, id, url, full
 }
 
-public enum Image: Decodable {
+public enum Image: Decodable, Equatable {
 	case id(Int)
 	case url(URL)
 	case full(Full)
 
-	public struct Full: Decodable {
+	public struct Full: Decodable, Equatable {
 		let id: Int
 		let name: String
 		let url: URL

@@ -1,39 +1,43 @@
 import EndpointKit
 import Foundation
 
-protocol CharacterQueryEndpoint: APIEndpoint where Parameters == CharacterQueryParameters, Response == Ponies {
+public protocol CharacterQueryEndpoint: APIEndpoint, Equatable where Parameters == CharacterQueryParameters, Response == Ponies {
 }
 
-struct GetAllCharacters: CharacterQueryEndpoint {
-	let parameters: CharacterQueryParameters
-	let endpoint: Endpoint = "GET character/all"
+public struct GetAllCharacters: CharacterQueryEndpoint {
+	public init(parameters: CharacterQueryParameters) {
+		self.parameters = parameters
+	}
+
+	public let parameters: CharacterQueryParameters
+	public let endpoint: Endpoint = "GET character/all"
 }
 
-struct GetCharactersById: CharacterQueryEndpoint {
-	let id: Int
-	let parameters: CharacterQueryParameters
-	var endpoint: Endpoint { .init("character/\(id)", .get) }
+public struct GetCharactersById: CharacterQueryEndpoint {
+	public let id: Int
+	public let parameters: CharacterQueryParameters
+	public var endpoint: Endpoint { .init("character/\(id)", .get) }
 }
 
-struct GetCharactersByKind: CharacterQueryEndpoint {
-	let kind: String
-	let parameters: CharacterQueryParameters
-	var endpoint: Endpoint { .init("by-kind/\(kind)", .get) }
+public struct GetCharactersByKind: CharacterQueryEndpoint {
+	public let kind: String
+	public let parameters: CharacterQueryParameters
+	public var endpoint: Endpoint { .init("by-kind/\(kind)", .get) }
 }
 
-struct GetCharactersByOccupation: CharacterQueryEndpoint {
-	let occupation: String
-	let parameters: CharacterQueryParameters
-	var endpoint: Endpoint { .init("by-occupation/\(occupation)", .get) }
+public struct GetCharactersByOccupation: CharacterQueryEndpoint {
+	public let occupation: String
+	public let parameters: CharacterQueryParameters
+	public var endpoint: Endpoint { .init("by-occupation/\(occupation)", .get) }
 }
 
-struct GetCharactersByResidence: CharacterQueryEndpoint {
-	let residence: String
-	let parameters: CharacterQueryParameters
-	var endpoint: Endpoint { .init("by-occupation/\(residence)", .get) }
+public struct GetCharactersByResidence: CharacterQueryEndpoint {
+	public let residence: String
+	public let parameters: CharacterQueryParameters
+	public var endpoint: Endpoint { .init("by-occupation/\(residence)", .get) }
 }
 
-public struct CharacterQueryParameters: Encodable {
+public struct CharacterQueryParameters: Encodable, Equatable {
 	public let limit: Int?
 	public let offset: Int?
 	public let line: LineType?

@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Pony: Identifiable, Decodable {
+public struct Pony: Identifiable, Decodable, Equatable {
 	public let id: Int
 	public let name: String
 	public let alias: String?
@@ -12,7 +12,7 @@ public struct Pony: Identifiable, Decodable {
 	public let image: [Image]?
 }
 
-public struct Ponies: Decodable {
+public struct Ponies: Decodable, Equatable {
 	public let data: [Pony]
 	public let status: Int
 	public let warning: String?

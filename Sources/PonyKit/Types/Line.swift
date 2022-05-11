@@ -1,10 +1,10 @@
 import Foundation
 
-public enum LineType: String, Encodable {
+public enum LineType: String, Encodable, Equatable {
 	case string, array
 }
 
-public enum Line: Decodable {
+public enum Line: Decodable, Equatable {
 	case string(String)
 	case array([String])
 }
